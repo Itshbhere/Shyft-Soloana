@@ -1,5 +1,26 @@
 {
+  "type": "module",
   "dependencies": {
-    "@shyft-to/js": "^0.2.40"
-  }
+    "@shyft-to/js": "^0.2.40",
+    "dotenv": "^16.4.7"
+  },
+  "name": "shyft",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000S\u0000h\u0000y\u0000f\u0000t\u0000-\u0000S\u0000o\u0000l\u0000o\u0000a\u0000n\u0000a\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Itshbhere/Shyft-Soloana.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Itshbhere/Shyft-Soloana/issues"
+  },
+  "homepage": "https://github.com/Itshbhere/Shyft-Soloana#readme"
 }
