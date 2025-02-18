@@ -4,7 +4,7 @@ dotenv.config();
 
 const key = process.env.MY_API;
 
-const shyft = new ShyftSdk({ apiKey: key, Network: Network.Devnet });
+const shyft = new ShyftSdk({ apiKey: key, network: Network.Devnet });
 (async () => {
   const token = await shyft.token.getInfo({
     network: Network.Devnet,
