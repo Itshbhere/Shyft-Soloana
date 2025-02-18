@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@shyft-to/js": "^0.2.40"
+  }
+}
