@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package shyft.rpc;
+
+service ShyftService {
+  rpc Subscribe(SubscribeRequest) returns (stream Transaction);
+}
+
+message SubscribeRequest {
+  TransactionSubscription transactions = 1;
+  string commitment = 2;
+}
+
+message TransactionSubscription {
+  repeated string accounts = 1;
+  bool includeAccounts = 2;
+  bool includeSignatures = 3;
+  bool includeRaw = 4;
+  bool includeMeta = 5;
+}
+
+message Transaction {
+  string signature = 1;
+  uint64 slot = 2;
+  repeated Account accounts = 3;
+  TransactionMeta meta = 4;
+}
+
+message Account {
+  string pubkey = 1;
+  bool writable = 2;
+}
+
+message TransactionMeta {
+  string err = 1;
+  uint64 fee = 2;
+  repeated uint64 preBalances = 3;
+  repeated uint64 postBalances = 4;
+}
