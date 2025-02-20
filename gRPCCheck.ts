@@ -13,7 +13,7 @@ import { PublicKey } from "@solana/web3.js";
 import bs58 from "bs58";
 
 // Constants
-const ENDPOINT = process.env.gRPC_URL;
+const ENDPOINT = "URL";
 const TOKEN = process.env.gRPC_TOKEN;
 const PUMP_FUN_PROGRAM_ID = "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P";
 const PUMP_FUN_CREATE_IX_DISCRIMINATOR = Buffer.from([
