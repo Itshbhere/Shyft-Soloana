@@ -8,3 +8,4 @@
 .env.production
 .env.test
 .env.*
+node_modules
